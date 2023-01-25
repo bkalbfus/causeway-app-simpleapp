@@ -1,5 +1,7 @@
 package domainapp.webapp;
 
+import org.apache.isis.security.bypass.authorization.AuthorizorBypass;
+import org.apache.isis.security.keycloak.IsisModuleSecurityKeycloak;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
@@ -49,6 +51,8 @@ import domainapp.webapp.quartz.QuartzModule;
         IsisModuleTestingH2ConsoleUi.class,
 
         IsisModuleExtFlywayImpl.class,
+
+        IsisModuleSecurityKeycloak.class,
 
         IsisModuleExtSecmanPersistenceJpa.class,
         IsisModuleExtSecmanEncryptionJbcrypt.class,
