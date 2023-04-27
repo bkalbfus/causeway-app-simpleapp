@@ -34,6 +34,11 @@ public class SimpleObjects {
     final JpaSupportService jpaSupportService;
     final SimpleObjectRepository simpleObjectRepository;
 
+    @Action
+    @ActionLayout
+    public ThingPage openThingPage() {
+        return new ThingPage();
+    }
 
     @Action(semantics = SemanticsOf.NON_IDEMPOTENT)
     @ActionLayout(promptStyle = PromptStyle.DIALOG_SIDEBAR)
