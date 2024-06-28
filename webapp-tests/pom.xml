@@ -59,7 +59,29 @@
             <artifactId>causeway-testing-fixtures-applib</artifactId>
             <scope>test</scope>
         </dependency>
+        
+       <dependency>
+			<groupId>org.apache.causeway.testing</groupId>
+			<artifactId>causeway-testing-specsupport-applib</artifactId>
+			<scope>test</scope>
+		</dependency> 
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-suite</artifactId>
+<!--    <version>${junitPlatformEngine}</version>-->
+</dependency>
 
-    </dependencies>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+<!--            <version>${cucumberJava}</version>-->
+        </dependency>
+
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+<!--            <version>${cucumberJunit}</version>-->
+        </dependency>  
+          </dependencies>
 
 </project>
