@@ -38,6 +38,13 @@
 
     <dependencyManagement>
         <dependencies>
+        <dependency>
+            <groupId>org.apache.causeway.valuetypes</groupId>
+            <artifactId>causeway-valuetypes-markdown</artifactId>
+            <scope>import</scope>
+            <type>pom</type>
+            <version>3.3.0</version> 
+        </dependency>
 
             <!-- this project's own modules -->
             <dependency>
